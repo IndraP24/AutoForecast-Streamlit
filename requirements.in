@@ -1,0 +1,6 @@
+fbprophet
+numpy
+streamlit
+pandas
+tensorflow-cpu
+statsmodels
