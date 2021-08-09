@@ -4,31 +4,16 @@
 #
 #    pip-compile requirements.in
 #
-absl-py==0.13.0
-    # via
-    #   tensorboard
-    #   tensorflow-cpu
-aiohttp==3.7.4.post0
-    # via
-    #   httpstan
-    #   pystan
 altair==4.1.0
     # via streamlit
-appdirs==1.4.4
-    # via httpstan
 argon2-cffi==20.1.0
     # via notebook
 astor==0.8.1
     # via streamlit
-astunparse==1.6.3
-    # via tensorflow-cpu
 async-generator==1.10
     # via nbclient
-async-timeout==3.0.1
-    # via aiohttp
 attrs==21.2.0
     # via
-    #   aiohttp
     #   jsonschema
     #   streamlit
 backcall==0.2.0
@@ -40,33 +25,27 @@ bleach==4.0.0
 blinker==1.4
     # via streamlit
 cachetools==4.2.2
-    # via
-    #   google-auth
-    #   streamlit
+    # via streamlit
 certifi==2021.5.30
     # via requests
 cffi==1.14.6
     # via argon2-cffi
-chardet==4.0.0
-    # via aiohttp
 charset-normalizer==2.0.4
     # via requests
 click==7.1.2
     # via streamlit
-clikit==0.6.2
-    # via pystan
 cmdstanpy==0.9.5
     # via fbprophet
 convertdate==2.3.2
     # via
     #   fbprophet
     #   holidays
-crashtest==0.3.1
-    # via clikit
 cycler==0.10.0
     # via matplotlib
 cython==0.29.24
-    # via fbprophet
+    # via
+    #   fbprophet
+    #   pystan
 debugpy==1.4.1
     # via ipykernel
 decorator==5.0.9
@@ -83,38 +62,16 @@ ephem==4.0.0.2
     # via lunarcalendar
 fbprophet==0.7.1
     # via -r requirements.in
-flatbuffers==1.12
-    # via tensorflow-cpu
-gast==0.4.0
-    # via tensorflow-cpu
 gitdb==4.0.7
     # via gitpython
 gitpython==3.1.18
     # via streamlit
-google-auth==1.34.0
-    # via
-    #   google-auth-oauthlib
-    #   tensorboard
-google-auth-oauthlib==0.4.5
-    # via tensorboard
-google-pasta==0.2.0
-    # via tensorflow-cpu
-grpcio==1.34.1
-    # via
-    #   tensorboard
-    #   tensorflow-cpu
-h5py==3.1.0
-    # via tensorflow-cpu
 hijri-converter==2.1.3
     # via holidays
 holidays==0.11.2
     # via fbprophet
-httpstan==4.5.0
-    # via pystan
 idna==3.2
-    # via
-    #   requests
-    #   yarl
+    # via requests
 ipykernel==6.0.3
     # via
     #   ipywidgets
@@ -158,26 +115,14 @@ jupyterlab-pygments==0.1.2
     # via nbconvert
 jupyterlab-widgets==1.0.0
     # via ipywidgets
-keras-nightly==2.5.0.dev2021032900
-    # via tensorflow-cpu
-keras-preprocessing==1.1.2
-    # via tensorflow-cpu
 kiwisolver==1.3.1
     # via matplotlib
 korean-lunar-calendar==0.2.1
     # via holidays
 lunarcalendar==0.0.9
     # via fbprophet
-lz4==3.1.3
-    # via httpstan
-markdown==3.3.4
-    # via tensorboard
 markupsafe==2.0.1
     # via jinja2
-marshmallow==3.13.0
-    # via
-    #   httpstan
-    #   webargs
 matplotlib==3.4.2
     # via fbprophet
 matplotlib-inline==0.1.2
@@ -186,10 +131,6 @@ matplotlib-inline==0.1.2
     #   ipython
 mistune==0.8.4
     # via nbconvert
-multidict==5.1.0
-    # via
-    #   aiohttp
-    #   yarl
 nbclient==0.5.3
     # via nbconvert
 nbconvert==6.1.0
@@ -210,25 +151,12 @@ numpy==1.19.5
     #   altair
     #   cmdstanpy
     #   fbprophet
-    #   h5py
-    #   httpstan
-    #   keras-preprocessing
     #   matplotlib
-    #   opt-einsum
     #   pandas
-    #   patsy
     #   pyarrow
     #   pydeck
     #   pystan
-    #   scipy
-    #   statsmodels
     #   streamlit
-    #   tensorboard
-    #   tensorflow-cpu
-oauthlib==3.1.1
-    # via requests-oauthlib
-opt-einsum==3.3.0
-    # via tensorflow-cpu
 packaging==21.0
     # via
     #   bleach
@@ -239,16 +167,11 @@ pandas==1.3.1
     #   altair
     #   cmdstanpy
     #   fbprophet
-    #   statsmodels
     #   streamlit
 pandocfilters==1.4.3
     # via nbconvert
 parso==0.8.2
     # via jedi
-pastel==0.2.1
-    # via clikit
-patsy==0.5.1
-    # via statsmodels
 pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
@@ -262,22 +185,13 @@ prometheus-client==0.11.0
 prompt-toolkit==3.0.19
     # via ipython
 protobuf==3.17.3
-    # via
-    #   streamlit
-    #   tensorboard
-    #   tensorflow-cpu
+    # via streamlit
 ptyprocess==0.7.0
     # via
     #   pexpect
     #   terminado
 pyarrow==5.0.0
     # via streamlit
-pyasn1==0.4.8
-    # via
-    #   pyasn1-modules
-    #   rsa
-pyasn1-modules==0.2.8
-    # via google-auth
 pycparser==2.20
     # via cffi
 pydeck==0.6.2
@@ -287,8 +201,6 @@ pygments==2.9.0
     #   ipython
     #   jupyterlab-pygments
     #   nbconvert
-pylev==1.4.0
-    # via clikit
 pymeeus==0.5.11
     # via convertdate
 pyparsing==2.4.7
@@ -297,10 +209,10 @@ pyparsing==2.4.7
     #   packaging
 pyrsistent==0.18.0
     # via jsonschema
-pysimdjson==3.2.0
-    # via pystan
-pystan==3.2.0
-    # via fbprophet
+pystan==2.19.1.1
+    # via
+    #   -r requirements.in
+    #   fbprophet
 python-dateutil==2.8.2
     # via
     #   fbprophet
@@ -321,56 +233,25 @@ pyzmq==22.2.1
     #   jupyter-client
     #   notebook
 requests==2.26.0
-    # via
-    #   requests-oauthlib
-    #   streamlit
-    #   tensorboard
-requests-oauthlib==1.3.0
-    # via google-auth-oauthlib
-rsa==4.7.2
-    # via google-auth
-scipy==1.7.1
-    # via statsmodels
+    # via streamlit
 send2trash==1.8.0
     # via notebook
 setuptools-git==1.2
     # via fbprophet
 six==1.15.0
     # via
-    #   absl-py
     #   argon2-cffi
-    #   astunparse
     #   bleach
     #   cycler
-    #   google-auth
-    #   google-pasta
-    #   grpcio
     #   holidays
     #   jsonschema
-    #   keras-preprocessing
-    #   patsy
     #   protobuf
     #   python-dateutil
-    #   tensorflow-cpu
     #   validators
 smmap==4.0.0
     # via gitdb
-statsmodels==0.12.2
-    # via -r requirements.in
 streamlit==0.86.0
     # via -r requirements.in
-tensorboard==2.6.0
-    # via tensorflow-cpu
-tensorboard-data-server==0.6.1
-    # via tensorboard
-tensorboard-plugin-wit==1.8.0
-    # via tensorboard
-tensorflow-cpu==2.5.0
-    # via -r requirements.in
-tensorflow-estimator==2.5.0
-    # via tensorflow-cpu
-termcolor==1.1.0
-    # via tensorflow-cpu
 terminado==0.10.1
     # via notebook
 testpath==0.5.0
@@ -401,10 +282,6 @@ traitlets==5.0.5
     #   nbformat
     #   notebook
     #   pydeck
-typing-extensions==3.7.4.3
-    # via
-    #   aiohttp
-    #   tensorflow-cpu
 tzlocal==2.1
     # via streamlit
 urllib3==1.26.6
@@ -415,23 +292,10 @@ watchdog==2.1.3
     # via streamlit
 wcwidth==0.2.5
     # via prompt-toolkit
-webargs==7.0.1
-    # via httpstan
 webencodings==0.5.1
     # via bleach
-werkzeug==2.0.1
-    # via tensorboard
-wheel==0.36.2
-    # via
-    #   astunparse
-    #   tensorboard
-    #   tensorflow-cpu
 widgetsnbextension==3.5.1
     # via ipywidgets
-wrapt==1.12.1
-    # via tensorflow-cpu
-yarl==1.6.3
-    # via aiohttp
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools

@@ -1,6 +1,5 @@
+pystan==2.19.1.1
 numpy
 streamlit
 pandas
-tensorflow-cpu
-statsmodels
 fbprophet
