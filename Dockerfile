@@ -11,4 +11,4 @@ EXPOSE 8501
 
 COPY . .
 
-CMD ["streamlit", "run", "app.py"]
+CMD streamlit run --server.port $PORT app.py
