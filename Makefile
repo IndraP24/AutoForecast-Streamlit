@@ -8,6 +8,6 @@ conda-update:
 
 # Compile and install exact pip packages
 pip-tools:
-	pip install pip-tools
+	pip install pip-tools pystan==2.19.1.1
 	pip-compile requirements.in
 	pip-sync requirements.txt
