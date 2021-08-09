@@ -11,3 +11,7 @@ pip-tools:
 	pip install pip-tools pystan==2.19.1.1
 	pip-compile requirements.in
 	pip-sync requirements.txt
+
+# Run streamlit file
+run:
+	streamlit run app.py
