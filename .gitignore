@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 .vscode
-/streamlit_forecasting_app
 
 # Jupyter Notebook
 .ipynb_checkpoints
